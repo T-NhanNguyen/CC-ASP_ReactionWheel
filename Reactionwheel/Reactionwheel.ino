@@ -1,98 +1,70 @@
-#include <bitswap.h>
-#include <chipsets.h>
-#include <color.h>
-#include <colorpalettes.h>
-#include <colorutils.h>
-#include <controller.h>
-#include <cpp_compat.h>
-#include <dmx.h>
 #include <FastLED.h>
-#include <fastled_config.h>
-#include <fastled_delay.h>
-#include <fastled_progmem.h>
-#include <fastpin.h>
-#include <fastspi.h>
-#include <fastspi_bitbang.h>
-#include <fastspi_dma.h>
-#include <fastspi_nop.h>
-#include <fastspi_ref.h>
-#include <fastspi_types.h>
-#include <hsv2rgb.h>
-#include <led_sysdefs.h>
-#include <lib8tion.h>
-#include <noise.h>
-#include <pixelset.h>
-#include <pixeltypes.h>
-#include <platforms.h>
-#include <power_mgt.h>
-
 #include <Wire.h>
+#include "MeOrion.h"
+#include <SoftwareSerial.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BNO055.h>
 #include <utility/imumaths.h>
-
+  //Gyro Sensor
 Adafruit_BNO055 bno = Adafruit_BNO055(55);
-#define LED_PIN     2
-#define NUM_LEDS    5
-#define BRIGHTNESS  64
-#define LED_TYPE    WS2812B
-#define COLOR_ORDER GRB
-CRGB leds[NUM_LEDS];
-#define UPDATES_PER_SECOND 100
-
-void FillLEDsFromPaletteColors();
-void turnLEDoff();
-
-void setup(void)
-{
-  Serial.begin(9600);
-  Serial.println("Orientation Sensor Raw Data Test"); Serial.println("");
-  //Initialise the sensor
-  if(!bno.begin())
-  {
-    /* There was a problem detecting the BNO055 ... check your connections */
-    Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
-    while(1);
-  }
+  //Motor Controller
+MeEncoderNew motor1(0x09, SLOT1); //  Motor at slot1
+MeEncoderNew motor2(0x09, SLOT2); //  motor at slot2
+#define M1speed;
+#define M2speed;
   //LEDs
-  FastLED.addLeds<WS2812B, LED_PIN, RGB>(leds, NUM_LEDS);
+#define NUM_LEDS 5    // How many leds are in the strip?
+#define DATA_PIN 5    // Data pin that led data will be written out over
+CRGB leds[NUM_LEDS];  // This is an array of leds.  One item for each led in your strip.
 
+void setup(){
+  Serial.begin(9600);
+  delay(2000);  //safety purposes for quick reaction disengage
+//------------------------------Setup for BNO055------------------------------
+  if(!bno.begin()){
+  /* check your connections, there was an error in the connection */
+  Serial.print("Ooops, no BNO055 detected ... Check your wiring or I2C ADDR!");
+  while(1);
   bno.setExtCrystalUse(true);
-
-  Serial.println("INITIATING");
+  }
+//------------------------------Setup for Motor Controller------------------------------
+  motor1.begin();
+  motor2.begin();
+//------------------------------Setup for LEDs------------------------------
+  FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
 }
 
-void loop(void){
- imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
- if(euler.x() > 50){
-  Serial.println("beep beep");
-  FillLEDsFromPaletteColors();
- }
- else
-  turnLEDoff();
+void loop(){
+  //DON'T REMOVE BELOW LINE. This is where you're able to extract angle value.
+  imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
+  //This is the tested range of the each axis. Use this to 'map' your values.
+  //x range: 0-360
+  //y range: -90-90
+  //z range: -180-180
+  int val = map(euler.y(), -10, 90, 0, 5);  //remap the limits from -10 and 90 to 0 and 5.
+
+  Serial.println(val);    //For testing purposes.
+  if(euler.y() > 0){
+    //blinktest();
+    gyrolights(val);
+
+  }
 }
 
-void FillLEDsFromPaletteColors()
-{
-    for(int i = 0; i < NUM_LEDS; i = i + 1) {
-      // Turn our current led on to white, then show the leds
-      leds[i] = CRGB::Yellow;
-
-      // Show the leds (only one of which is set to white, from above)
-      FastLED.show();
-
-      // Wait a little bit
-      delay(100);
-
-      // Turn our current led back to black for the next loop around
-      leds[i] = CRGB::Black;
-   }
+/*    LEDs TESTING  */
+void blinktest(){
+  for(int i = 0; i < NUM_LEDS; i = i + 1) {
+    // Cycling on and off through all the LEDs
+    leds[i] = CRGB::Red;
+    FastLED.show();   // Make the LED pop up.
+    delay(100);
+    leds[i] = CRGB::Black;   // Turn our current led back to black for the next loop around
+  }
 }
-void turnLEDoff()
-{
-    for(int i = 0; i < NUM_LEDS; i = i + 1) {
-      // Turn our current led back to black for the next loop around
-      leds[i] = CRGB::Black;
-      FastLED.show();
-   }
+void gyrolights(int value){
+  leds[value] = CRGB::Orange; //Set the angle value of the BNO055 to the index of array.
+  FastLED.show();
+  delay(100);
+  leds[value-1] = CRGB::Black;
+  leds[value+1] = CRGB::Black;
 }
