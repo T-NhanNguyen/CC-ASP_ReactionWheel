@@ -1,17 +1,24 @@
 #include <FastLED.h>
-#include <Wire.h>
 #include "MeOrion.h"
 #include <SoftwareSerial.h>
+#include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BNO055.h>
 #include <utility/imumaths.h>
+#include <math.h>
+
+float wheelmass = 50;   //used for calculation of Inertia
+float wheelradius = 50; //used for calculation of Inertia
+float cubemass = 20;
+float gravity = 9.8;
+
   //Gyro Sensor
 Adafruit_BNO055 bno = Adafruit_BNO055(55);
+
   //Motor Controller
-MeEncoderNew motor1(0x09, SLOT1); //  Motor at slot1
-MeEncoderNew motor2(0x09, SLOT2); //  motor at slot2
-#define M1speed;
-#define M2speed;
+MeEncoderNew xmotor(0x09, SLOT1); //  Motor at slot1 .  can use the example library in Makeblock to change address
+MeEncoderNew zmotor(0x09, SLOT2); //  motor at slot2
+
   //LEDs
 #define NUM_LEDS 5    // How many leds are in the strip?
 #define DATA_PIN 5    // Data pin that led data will be written out over
@@ -19,7 +26,7 @@ CRGB leds[NUM_LEDS];  // This is an array of leds.  One item for each led in you
 
 void setup(){
   Serial.begin(9600);
-  delay(2000);  //safety purposes for quick reaction disengage
+  delay(1000);  //safety purposes for quick reaction disengage
 //------------------------------Setup for BNO055------------------------------
   if(!bno.begin()){
   /* check your connections, there was an error in the connection */
@@ -28,8 +35,8 @@ void setup(){
   bno.setExtCrystalUse(true);
   }
 //------------------------------Setup for Motor Controller------------------------------
-  motor1.begin();
-  motor2.begin();
+  xmotor.begin();
+  zmotor.begin();
 //------------------------------Setup for LEDs------------------------------
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
 }
@@ -42,14 +49,59 @@ void loop(){
   //y range: -90-90
   //z range: -180-180
   int val = map(euler.y(), -10, 90, 0, 5);  //remap the limits from -10 and 90 to 0 and 5.
-
-  Serial.println(val);    //For testing purposes.
-  if(euler.y() > 0){
-    //blinktest();
-    gyrolights(val);
-
-  }
+  //xmotor.runSpeed(-20);
+  //zmotor.runSpeed(20);
 }
+
+/*  X axis spins along the global y (top or bottom) axis
+ *  Y axis spins along the global x (sides) axis
+ *  Z acis spins along the global z (outward or inward) axis
+ */
+void rotateZ(int i){
+  /*Y axis rotation should be passed through
+   * positive value is tilting back
+   * negative value is tilting forward
+   */
+  if(i < 0)                     //We want to spin CW so that the angular momentum will push it back
+    zmotor.runSpeed(i*(-10));   //assumming that motor can handle 10k rpm. will spin accordingly to the magnitude of it's angle
+  if(i > 0)                     //We want to spin CCW so that the angular momentum will push it forward
+    zmotor.runSpeed(i*10);
+}
+
+void rotateX(int i){
+  /*Z axis rotation should be passed through
+   * positive value is tilting right
+   * negative value is tilting left
+   */
+  if(i < 0)                     //We want to spin CW so that the angular momentum will push it left
+    zmotor.runSpeed(i*(-10));   //assumming that motor can handle 10k rpm. will spin accordingly to the magnitude of it's angle
+  if(i > 0)                     //We want to spin CCW so that the angular momentum will push it right
+    zmotor.runSpeed(i*10);
+}
+/*int mathangularVelo(float i){
+  //I is theta, of an axis
+    /*    negative i = ccw. correcting motor should spin cw
+    *     positive i = cw. correcting motor should spin ccw
+    *
+  float angmom = cubemass*gravity;//*cos(abs(i));
+  float inertia = wheelmass*wheelradius^2;
+  float velocity = angmom-inertia;
+  if(i > 0)
+    velocity = velocity*(-1);
+  return();
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 /*    LEDs TESTING  */
 void blinktest(){
