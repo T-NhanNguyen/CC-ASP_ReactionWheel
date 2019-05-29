@@ -34,9 +34,13 @@ void setup(){
   while(1);
   bno.setExtCrystalUse(true);
   }
+/*  X axis spins along the global y (top or bottom) axis
+ *  Y axis spins along the global x (sides) axis
+ *  Z acis spins along the global z (outward or inward) axis
+ */
 //------------------------------Setup for Motor Controller------------------------------
-  xmotor.begin();
-  zmotor.begin();
+  xmotor.begin();   //motor1
+  zmotor.begin();   //motor2
 //------------------------------Setup for LEDs------------------------------
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);
 }
@@ -48,24 +52,28 @@ void loop(){
   //x range: 0-360
   //y range: -90-90
   //z range: -180-180
-  int val = map(euler.y(), -10, 90, 0, 5);  //remap the limits from -10 and 90 to 0 and 5.
-  //xmotor.runSpeed(-20);
-  //zmotor.runSpeed(20);
+  int val_X = map(euler.x(), 0, 360, -25, 25);  //remap the limits from -10 and 90 to 0 and 5.
+  int val_Y = map(euler.y(), -90, 90, -25, 25);  //remap the limits from -10 and 90 to 0 and 5.
+  int val_Z = map(euler.z(), -180, 180, -25, 25);  //remap the limits from -10 and 90 to 0 and 5.
+  //val_X = val_X*10;
+  //val_Y = val_X*10;
+  //val_Z = val_Z*10;
+  printbno0555(val_X, val_Y, val_Z);
+  rotateZ(val_Z);
+  rotateX(val_Y);
 }
 
-/*  X axis spins along the global y (top or bottom) axis
- *  Y axis spins along the global x (sides) axis
- *  Z acis spins along the global z (outward or inward) axis
- */
+
 void rotateZ(int i){
   /*Y axis rotation should be passed through
    * positive value is tilting back
    * negative value is tilting forward
    */
   if(i < 0)                     //We want to spin CW so that the angular momentum will push it back
-    zmotor.runSpeed(i*(-10));   //assumming that motor can handle 10k rpm. will spin accordingly to the magnitude of it's angle
+    zmotor.runSpeed(i);   //assumming that motor can handle 10k rpm. will spin accordingly to the magnitude of it's angle
   if(i > 0)                     //We want to spin CCW so that the angular momentum will push it forward
-    zmotor.runSpeed(i*10);
+    zmotor.runSpeed(i);
+  //Serial.println(i);
 }
 
 void rotateX(int i){
@@ -74,9 +82,12 @@ void rotateX(int i){
    * negative value is tilting left
    */
   if(i < 0)                     //We want to spin CW so that the angular momentum will push it left
-    zmotor.runSpeed(i*(-10));   //assumming that motor can handle 10k rpm. will spin accordingly to the magnitude of it's angle
+    xmotor.runSpeed(i);         //assumming that motor can handle 10k rpm. will spin accordingly to the magnitude of it's angle
   if(i > 0)                     //We want to spin CCW so that the angular momentum will push it right
-    zmotor.runSpeed(i*10);
+    xmotor.runSpeed(i);
+    
+  //Serial.print("pos: ");
+  //Serial.println(xmotor.getCurrentPosition());
 }
 /*int mathangularVelo(float i){
   //I is theta, of an axis
@@ -91,7 +102,45 @@ void rotateX(int i){
   return();
 }
 */
+void printbno0555(int x, int y, int z){
+    /* Display the floating point data */
+  imu::Vector<3> euler = bno.getVector(Adafruit_BNO055::VECTOR_EULER);
+  Serial.print("X: ");
+  Serial.print(x);
+  Serial.print(" Y: ");
+  Serial.print(y);
+  Serial.print(" Z: ");
+  Serial.print(z);
+  Serial.print("\t\t");
 
+  /*
+  // Quaternion data
+  imu::Quaternion quat = bno.getQuat();
+  Serial.print("qW: ");
+  Serial.print(quat.w(), 4);
+  Serial.print(" qX: ");
+  Serial.print(quat.x(), 4);
+  Serial.print(" qY: ");
+  Serial.print(quat.y(), 4);
+  Serial.print(" qZ: ");
+  Serial.print(quat.z(), 4);
+  Serial.print("\t\t");
+  */
+
+  /* Display calibration status for each sensor. */
+  uint8_t system, gyro, accel, mag = 0;
+  bno.getCalibration(&system, &gyro, &accel, &mag);
+  Serial.print("CALIBRATION: Sys=");
+  Serial.print(system, DEC);
+  Serial.print(" Gyro=");
+  Serial.print(gyro, DEC);
+  Serial.print(" Accel=");
+  Serial.print(accel, DEC);
+  Serial.print(" Mag=");
+  Serial.println(mag, DEC);
+
+  delay(100);
+}
 
 
 
