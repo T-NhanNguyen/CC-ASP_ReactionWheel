@@ -19,16 +19,6 @@ download the executable.-->
 			<DATE>06/06/2019</DATE>
 			<GRID spacing='100.00000' snap='1'/>
 		</DETAILS>
-		<FONT id='0'>
-			<HEIGHT>-13</HEIGHT>
-			<WIDTH>6</WIDTH>
-			<WEIGHT>400</WEIGHT>
-			<ITALIC>0</ITALIC>
-			<UNDERLINE>0</UNDERLINE>
-			<STRIKEOUT>0</STRIKEOUT>
-			<CHARSET>0</CHARSET>
-			<FACENAME>Arial</FACENAME>
-		</FONT>
 		<FONT id='1'>
 			<HEIGHT>-10</HEIGHT>
 			<WIDTH>0</WIDTH>
@@ -39,44 +29,39 @@ download the executable.-->
 			<CHARSET>0</CHARSET>
 			<FACENAME>Arial</FACENAME>
 		</FONT>
-		<STYLE id='3'>
-			<STYLE>0</STYLE>
-			<COLOR>000000</COLOR>
-			<THICKNESS>2</THICKNESS>
-		</STYLE>
-		<STYLE id='5'>
-			<STYLE>0</STYLE>
-			<COLOR>C08000</COLOR>
-			<THICKNESS>2</THICKNESS>
-		</STYLE>
-		<STYLE id='6'>
-			<STYLE>0</STYLE>
-			<COLOR>808000</COLOR>
-			<THICKNESS>2</THICKNESS>
-		</STYLE>
-		<STYLE id='7'>
+		<FONT id='3'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<STYLE id='9'>
 			<STYLE>0</STYLE>
 			<COLOR>000000</COLOR>
 			<THICKNESS>1</THICKNESS>
 		</STYLE>
 		<STYLE id='10'>
 			<STYLE>0</STYLE>
-			<COLOR>808080</COLOR>
+			<COLOR>808000</COLOR>
 			<THICKNESS>2</THICKNESS>
 		</STYLE>
 		<STYLE id='11'>
 			<STYLE>0</STYLE>
-			<COLOR>808080</COLOR>
+			<COLOR>C08000</COLOR>
 			<THICKNESS>2</THICKNESS>
 		</STYLE>
 		<STYLE id='12'>
 			<STYLE>0</STYLE>
-			<COLOR>808080</COLOR>
+			<COLOR>000000</COLOR>
 			<THICKNESS>2</THICKNESS>
 		</STYLE>
-		<STYLE id='15'>
+		<STYLE id='13'>
 			<STYLE>0</STYLE>
-			<COLOR>000000</COLOR>
+			<COLOR>808080</COLOR>
 			<THICKNESS>2</THICKNESS>
 		</STYLE>
 		<FILL id='0'>
@@ -92,15 +77,15 @@ download the executable.-->
 			<TinyCAD>
 				<PIN pos='82.00000,43.00000' which='5' elec='4' direction='1' part='0' number='1' show='0' length='30' number_pos='0' centre_name='0'></PIN>
 				<PIN pos='82.00000,51.00000' which='5' elec='4' direction='0' part='0' number='2' show='0' length='30' number_pos='0' centre_name='0'></PIN>
-				<POLYGON pos='82.00000,43.00000' style='7' fill='0'>
+				<POLYGON pos='82.00000,43.00000' style='9' fill='0'>
 					<POINT pos='0.00000,1.60000' arc='0'/>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='82.00000,50.40000' style='7' fill='0'>
+				<POLYGON pos='82.00000,50.40000' style='9' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='0.00000,1.60000' arc='0'/>
 				</POLYGON>
-				<RECTANGLE a='80.40000,44.60000' b='83.40000,50.40000' style='7' fill='0'/>
+				<RECTANGLE a='80.40000,44.60000' b='83.40000,50.40000' style='9' fill='0'/>
 			</TinyCAD>
 		</SYMBOLDEF>
 		<SYMBOLDEF id='2'>
@@ -113,35 +98,35 @@ download the executable.-->
 				<PIN pos='85.00000,43.00000' which='5' elec='4' direction='1' part='0' number='1' show='0' length='30' number_pos='0' centre_name='0'></PIN>
 				<PIN pos='85.00000,51.00000' which='5' elec='4' direction='0' part='0' number='2' show='0' length='30' number_pos='0' centre_name='0'></PIN>
 				<PIN pos='81.00000,48.00000' which='5' elec='4' direction='3' part='0' number='3' show='0' length='30' number_pos='0' centre_name='0'></PIN>
-				<POLYGON pos='85.00000,50.40000' style='7' fill='0'>
+				<POLYGON pos='85.00000,50.40000' style='9' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='0.00000,1.60000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='87.20000,44.60000' style='7' fill='0'>
+				<POLYGON pos='87.20000,44.60000' style='9' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='0.60000,0.60000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='87.20000,44.00000' style='7' fill='0'>
+				<POLYGON pos='87.20000,44.00000' style='9' fill='0'>
 					<POINT pos='1.40000,0.00000' arc='0'/>
 					<POINT pos='0.00000,0.60000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='87.80000,44.00000' style='7' fill='0'>
+				<POLYGON pos='87.80000,44.00000' style='9' fill='0'>
 					<POINT pos='0.80000,0.00000' arc='0'/>
 					<POINT pos='0.00000,1.20000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='83.60000,44.00000' style='7' fill='0'>
+				<POLYGON pos='83.60000,44.00000' style='9' fill='0'>
 					<POINT pos='0.00000,4.00000' arc='0'/>
 					<POINT pos='5.00000,0.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='81.00000,48.00000' style='7' fill='0'>
+				<POLYGON pos='81.00000,48.00000' style='9' fill='0'>
 					<POINT pos='2.60000,0.00000' arc='0'/>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='85.00000,43.00000' style='7' fill='0'>
+				<POLYGON pos='85.00000,43.00000' style='9' fill='0'>
 					<POINT pos='0.00000,1.60000' arc='0'/>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 				</POLYGON>
-				<RECTANGLE a='83.40000,44.60000' b='86.40000,50.40000' style='7' fill='0'/>
+				<RECTANGLE a='83.40000,44.60000' b='86.40000,50.40000' style='9' fill='0'/>
 			</TinyCAD>
 		</SYMBOLDEF>
 		<OPTIONS>
@@ -160,139 +145,132 @@ download the executable.-->
 			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
 			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
-		<RECTANGLE a='56.00000,24.00000' b='78.00000,88.00000' style='6' fill='0'/>
-		<LABEL pos='58.00000,28.00000' direction='3' font='0' color='208000' style='3'>TX1</LABEL>
-		<LABEL pos='58.00000,32.00000' direction='3' font='0' color='208000' style='3'>RX0</LABEL>
-		<LABEL pos='58.00000,36.00000' direction='3' font='0' color='208000' style='3'>RST</LABEL>
-		<LABEL pos='58.00000,40.00000' direction='3' font='0' color='208000' style='3'>GND</LABEL>
-		<LABEL pos='58.00000,44.00000' direction='3' font='0' color='208000' style='3'>D2</LABEL>
-		<LABEL pos='58.00000,48.00000' direction='3' font='0' color='208000' style='3'>D3</LABEL>
-		<LABEL pos='58.00000,52.00000' direction='3' font='0' color='208000' style='3'>D4</LABEL>
-		<LABEL pos='58.00000,56.00000' direction='3' font='0' color='208000' style='3'>D5</LABEL>
-		<LABEL pos='58.00000,60.00000' direction='3' font='0' color='208000' style='3'>D6</LABEL>
-		<LABEL pos='58.00000,64.00000' direction='3' font='0' color='208000' style='3'>D7</LABEL>
-		<LABEL pos='58.00000,68.00000' direction='3' font='0' color='208000' style='3'>D8</LABEL>
-		<LABEL pos='58.00000,72.00000' direction='3' font='0' color='208000' style='3'>D9</LABEL>
-		<LABEL pos='58.00000,76.00000' direction='3' font='0' color='208000' style='3'>D10</LABEL>
-		<LABEL pos='58.00000,80.00000' direction='3' font='0' color='208000' style='3'>D11</LABEL>
-		<LABEL pos='58.00000,84.00000' direction='3' font='0' color='208000' style='3'>D12</LABEL>
-		<LABEL pos='76.00000,84.00000' direction='2' font='0' color='208000' style='3'>D13</LABEL>
-		<LABEL pos='76.00000,80.00000' direction='2' font='0' color='208000' style='3'>3V3</LABEL>
-		<LABEL pos='76.00000,76.00000' direction='2' font='0' color='208000' style='3'>REF</LABEL>
-		<LABEL pos='76.00000,72.00000' direction='2' font='0' color='208000' style='3'>A0</LABEL>
-		<LABEL pos='76.00000,68.00000' direction='2' font='0' color='208000' style='3'>A1</LABEL>
-		<LABEL pos='76.00000,64.00000' direction='2' font='0' color='208000' style='3'>A2</LABEL>
-		<LABEL pos='76.00000,60.00000' direction='2' font='0' color='208000' style='3'>A3</LABEL>
-		<LABEL pos='76.00000,56.00000' direction='2' font='0' color='208000' style='3'>A4</LABEL>
-		<LABEL pos='76.00000,52.00000' direction='2' font='0' color='208000' style='3'>A5</LABEL>
-		<LABEL pos='76.00000,48.00000' direction='2' font='0' color='208000' style='3'>A6</LABEL>
-		<LABEL pos='76.00000,44.00000' direction='2' font='0' color='208000' style='3'>A7</LABEL>
-		<LABEL pos='76.00000,40.00000' direction='2' font='0' color='208000' style='3'>5V</LABEL>
-		<LABEL pos='76.00000,36.00000' direction='2' font='0' color='208000' style='3'>RST</LABEL>
-		<LABEL pos='76.00000,32.00000' direction='2' font='0' color='208000' style='3'>GND</LABEL>
-		<LABEL pos='76.00000,28.00000' direction='2' font='0' color='208000' style='3'>VIN</LABEL>
-		<TEXT pos='68.00000,70.00000' direction='0' font='0' color='000000'>ARDUINO NANO</TEXT>
-		<RECTANGLE a='62.00000,84.00000' b='72.00000,90.00000' style='6' fill='0'/>
-		<SYMBOL id='1' pos='168.00000,30.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<RECTANGLE a='56.00000,24.00000' b='78.00000,88.00000' style='10' fill='0'/>
+		<LABEL pos='58.00000,28.00000' direction='3' font='3' color='208000' style='3'>TX1</LABEL>
+		<LABEL pos='58.00000,32.00000' direction='3' font='3' color='208000' style='3'>RX0</LABEL>
+		<LABEL pos='58.00000,36.00000' direction='3' font='3' color='208000' style='3'>RST</LABEL>
+		<LABEL pos='58.00000,40.00000' direction='3' font='3' color='208000' style='3'>GND</LABEL>
+		<LABEL pos='58.00000,44.00000' direction='3' font='3' color='208000' style='3'>D2</LABEL>
+		<LABEL pos='58.00000,48.00000' direction='3' font='3' color='208000' style='3'>D3</LABEL>
+		<LABEL pos='58.00000,52.00000' direction='3' font='3' color='208000' style='3'>D4</LABEL>
+		<LABEL pos='58.00000,56.00000' direction='3' font='3' color='208000' style='3'>D5</LABEL>
+		<LABEL pos='58.00000,60.00000' direction='3' font='3' color='208000' style='3'>D6</LABEL>
+		<LABEL pos='58.00000,64.00000' direction='3' font='3' color='208000' style='3'>D7</LABEL>
+		<LABEL pos='58.00000,68.00000' direction='3' font='3' color='208000' style='3'>D8</LABEL>
+		<LABEL pos='58.00000,72.00000' direction='3' font='3' color='208000' style='3'>D9</LABEL>
+		<LABEL pos='58.00000,76.00000' direction='3' font='3' color='208000' style='3'>D10</LABEL>
+		<LABEL pos='58.00000,80.00000' direction='3' font='3' color='208000' style='3'>D11</LABEL>
+		<LABEL pos='58.00000,84.00000' direction='3' font='3' color='208000' style='3'>D12</LABEL>
+		<LABEL pos='76.00000,84.00000' direction='2' font='3' color='208000' style='3'>D13</LABEL>
+		<LABEL pos='76.00000,80.00000' direction='2' font='3' color='208000' style='3'>3V3</LABEL>
+		<LABEL pos='76.00000,76.00000' direction='2' font='3' color='208000' style='3'>REF</LABEL>
+		<LABEL pos='76.00000,72.00000' direction='2' font='3' color='208000' style='3'>A0</LABEL>
+		<LABEL pos='76.00000,68.00000' direction='2' font='3' color='208000' style='3'>A1</LABEL>
+		<LABEL pos='76.00000,64.00000' direction='2' font='3' color='208000' style='3'>A2</LABEL>
+		<LABEL pos='76.00000,60.00000' direction='2' font='3' color='208000' style='3'>A3</LABEL>
+		<LABEL pos='76.00000,56.00000' direction='2' font='3' color='208000' style='3'>A4</LABEL>
+		<LABEL pos='76.00000,52.00000' direction='2' font='3' color='208000' style='3'>A5</LABEL>
+		<LABEL pos='76.00000,48.00000' direction='2' font='3' color='208000' style='3'>A6</LABEL>
+		<LABEL pos='76.00000,44.00000' direction='2' font='3' color='208000' style='3'>A7</LABEL>
+		<LABEL pos='76.00000,40.00000' direction='2' font='3' color='208000' style='3'>5V</LABEL>
+		<LABEL pos='76.00000,36.00000' direction='2' font='3' color='208000' style='3'>RST</LABEL>
+		<LABEL pos='76.00000,32.00000' direction='2' font='3' color='208000' style='3'>GND</LABEL>
+		<LABEL pos='76.00000,28.00000' direction='2' font='3' color='208000' style='3'>VIN</LABEL>
+		<TEXT pos='68.00000,70.00000' direction='0' font='3' color='000000'>ARDUINO NANO</TEXT>
+		<RECTANGLE a='62.00000,84.00000' b='72.00000,90.00000' style='10' fill='0'/>
+		<SYMBOL id='1' pos='168.00000,26.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='PHOTO-RESISTOR 1' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='R' show='1' pos='-10.00000,-4.00000'/>
 		</SYMBOL>
-		<SYMBOL id='1' pos='168.00000,40.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='1' pos='168.00000,38.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='PHOTO-RESISTOR 2' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='R' show='1' pos='-10.00000,-4.00000'/>
 		</SYMBOL>
-		<SYMBOL id='1' pos='168.00000,50.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='1' pos='168.00000,48.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='PHOTO-RESISTOR 3' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='R' show='1' pos='-10.00000,-4.00000'/>
 		</SYMBOL>
-		<SYMBOL id='1' pos='168.00000,60.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='1' pos='168.00000,58.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='PHOTO-RESISTOR 4' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='R' show='1' pos='-10.00000,-4.00000'/>
 		</SYMBOL>
 		<WIRE a='106.00000,40.00000' b='148.00000,40.00000'/>
-		<WIRE a='148.00000,38.00000' b='148.00000,28.00000'/>
-		<WIRE a='148.00000,28.00000' b='160.00000,28.00000'/>
-		<WIRE a='160.00000,38.00000' b='148.00000,38.00000'/>
-		<WIRE a='160.00000,48.00000' b='148.00000,48.00000'/>
-		<WIRE a='148.00000,40.00000' b='148.00000,38.00000'/>
-		<WIRE a='160.00000,58.00000' b='148.00000,58.00000'/>
-		<WIRE a='148.00000,48.00000' b='148.00000,40.00000'/>
-		<SYMBOL id='1' pos='190.00000,30.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<WIRE a='148.00000,36.00000' b='148.00000,24.00000'/>
+		<WIRE a='148.00000,24.00000' b='160.00000,24.00000'/>
+		<WIRE a='160.00000,36.00000' b='148.00000,36.00000'/>
+		<WIRE a='160.00000,46.00000' b='148.00000,46.00000'/>
+		<WIRE a='148.00000,40.00000' b='148.00000,36.00000'/>
+		<WIRE a='160.00000,56.00000' b='148.00000,56.00000'/>
+		<WIRE a='148.00000,46.00000' b='148.00000,40.00000'/>
+		<SYMBOL id='1' pos='190.00000,26.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='1K OHM' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='R' show='1' pos='-10.00000,-4.00000'/>
 		</SYMBOL>
-		<SYMBOL id='1' pos='190.00000,40.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='1' pos='190.00000,38.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='1K OHM' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='R' show='1' pos='-10.00000,-4.00000'/>
 		</SYMBOL>
-		<SYMBOL id='1' pos='190.00000,50.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='1' pos='190.00000,48.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='1K OHM' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='R' show='1' pos='-10.00000,-4.00000'/>
 		</SYMBOL>
-		<SYMBOL id='1' pos='190.00000,60.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='1' pos='190.00000,58.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='1K OHM' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='R' show='1' pos='-10.00000,-4.00000'/>
 		</SYMBOL>
-		<WIRE a='168.00000,28.00000' b='182.00000,28.00000'/>
-		<WIRE a='168.00000,38.00000' b='182.00000,38.00000'/>
-		<WIRE a='168.00000,48.00000' b='182.00000,48.00000'/>
-		<WIRE a='168.00000,58.00000' b='182.00000,58.00000'/>
-		<WIRE a='190.00000,38.00000' b='190.00000,48.00000'/>
-		<WIRE a='190.00000,48.00000' b='190.00000,58.00000'/>
+		<WIRE a='174.00000,24.00000' b='182.00000,24.00000'/>
+		<WIRE a='174.00000,36.00000' b='182.00000,36.00000'/>
+		<WIRE a='174.00000,46.00000' b='182.00000,46.00000'/>
+		<WIRE a='174.00000,56.00000' b='182.00000,56.00000'/>
+		<WIRE a='190.00000,36.00000' b='190.00000,46.00000'/>
+		<WIRE a='190.00000,46.00000' b='190.00000,56.00000'/>
 		<WIRE a='110.00000,32.00000' b='142.00000,32.00000'/>
-		<WIRE a='142.00000,32.00000' b='142.00000,22.00000'/>
-		<WIRE a='190.00000,28.00000' b='190.00000,38.00000'/>
-		<WIRE a='190.00000,22.00000' b='190.00000,28.00000'/>
-		<SYMBOL id='2' pos='168.00000,76.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<WIRE a='142.00000,32.00000' b='142.00000,16.00000'/>
+		<WIRE a='190.00000,24.00000' b='190.00000,36.00000'/>
+		<WIRE a='190.00000,16.00000' b='190.00000,24.00000'/>
+		<SYMBOL id='2' pos='168.00000,74.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='1K OHM POT.' show='1' pos='-10.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='RV' show='1' pos='-10.00000,-8.00000'/>
 		</SYMBOL>
-		<WIRE a='160.00000,72.00000' b='148.00000,72.00000'/>
-		<WIRE a='148.00000,58.00000' b='148.00000,48.00000'/>
-		<WIRE a='148.00000,72.00000' b='148.00000,58.00000'/>
-		<WIRE a='168.00000,72.00000' b='198.00000,72.00000'/>
-		<WIRE a='198.00000,72.00000' b='198.00000,22.00000'/>
-		<WIRE a='190.00000,22.00000' b='142.00000,22.00000'/>
-		<WIRE a='198.00000,22.00000' b='190.00000,22.00000'/>
-		<WIRE a='163.00000,68.00000' b='142.00000,68.00000'/>
-		<WIRE a='142.00000,68.00000' b='142.00000,48.00000'/>
+		<WIRE a='160.00000,70.00000' b='148.00000,70.00000'/>
+		<WIRE a='148.00000,56.00000' b='148.00000,46.00000'/>
+		<WIRE a='148.00000,70.00000' b='148.00000,56.00000'/>
+		<WIRE a='168.00000,70.00000' b='198.00000,70.00000'/>
+		<WIRE a='198.00000,70.00000' b='198.00000,16.00000'/>
+		<WIRE a='190.00000,16.00000' b='142.00000,16.00000'/>
+		<WIRE a='198.00000,16.00000' b='190.00000,16.00000'/>
+		<WIRE a='163.00000,66.00000' b='142.00000,66.00000'/>
+		<WIRE a='142.00000,66.00000' b='142.00000,48.00000'/>
 		<WIRE a='142.00000,48.00000' b='76.00000,48.00000'/>
 		<WIRE a='76.00000,72.00000' b='94.00000,72.00000'/>
 		<WIRE a='94.00000,72.00000' b='94.00000,88.00000'/>
 		<WIRE a='94.00000,88.00000' b='202.00000,88.00000'/>
-		<WIRE a='202.00000,88.00000' b='202.00000,28.00000'/>
-		<WIRE a='202.00000,28.00000' b='190.00000,28.00000'/>
+		<WIRE a='202.00000,88.00000' b='202.00000,20.00000'/>
 		<WIRE a='76.00000,68.00000' b='96.00000,68.00000'/>
 		<WIRE a='96.00000,68.00000' b='96.00000,90.00000'/>
 		<WIRE a='96.00000,90.00000' b='206.00000,90.00000'/>
-		<WIRE a='206.00000,90.00000' b='206.00000,38.00000'/>
-		<WIRE a='206.00000,38.00000' b='190.00000,38.00000'/>
 		<WIRE a='76.00000,64.00000' b='98.00000,64.00000'/>
 		<WIRE a='98.00000,64.00000' b='98.00000,92.00000'/>
 		<WIRE a='98.00000,92.00000' b='210.00000,92.00000'/>
-		<WIRE a='210.00000,92.00000' b='210.00000,48.00000'/>
-		<WIRE a='210.00000,48.00000' b='190.00000,48.00000'/>
 		<WIRE a='76.00000,60.00000' b='100.00000,60.00000'/>
 		<WIRE a='100.00000,60.00000' b='100.00000,94.00000'/>
 		<WIRE a='100.00000,94.00000' b='214.00000,94.00000'/>
-		<WIRE a='214.00000,94.00000' b='214.00000,58.00000'/>
-		<WIRE a='214.00000,58.00000' b='190.00000,58.00000'/>
-		<RECTANGLE a='56.00000,110.00000' b='86.00000,134.00000' style='5' fill='0'/>
-		<TEXT pos='62.00000,124.00000' direction='3' font='0' color='000000'>BNO055</TEXT>
-		<LABEL pos='60.00000,110.00000' direction='0' font='0' color='208000' style='2'>VIN</LABEL>
-		<LABEL pos='64.00000,110.00000' direction='0' font='0' color='208000' style='2'>3VO</LABEL>
-		<LABEL pos='68.00000,110.00000' direction='0' font='0' color='208000' style='2'>GND</LABEL>
-		<LABEL pos='72.00000,110.00000' direction='0' font='0' color='208000' style='2'>SDA</LABEL>
-		<LABEL pos='76.00000,110.00000' direction='0' font='0' color='208000' style='2'>SCL</LABEL>
-		<LABEL pos='80.00000,110.00000' direction='0' font='0' color='208000' style='2'>RST</LABEL>
-		<LABEL pos='60.00000,134.00000' direction='1' font='0' color='208000' style='2'>PS0</LABEL>
-		<LABEL pos='64.00000,134.00000' direction='1' font='0' color='208000' style='2'>PS1</LABEL>
-		<LABEL pos='68.00000,134.00000' direction='1' font='0' color='208000' style='2'>INT</LABEL>
-		<LABEL pos='72.00000,134.00000' direction='1' font='0' color='208000' style='2'>ADR</LABEL>
+		<RECTANGLE a='56.00000,110.00000' b='86.00000,134.00000' style='11' fill='0'/>
+		<TEXT pos='62.00000,124.00000' direction='3' font='3' color='000000'>BNO055</TEXT>
+		<LABEL pos='60.00000,110.00000' direction='0' font='3' color='208000' style='2'>VIN</LABEL>
+		<LABEL pos='64.00000,110.00000' direction='0' font='3' color='208000' style='2'>3VO</LABEL>
+		<LABEL pos='68.00000,110.00000' direction='0' font='3' color='208000' style='2'>GND</LABEL>
+		<LABEL pos='72.00000,110.00000' direction='0' font='3' color='208000' style='2'>SDA</LABEL>
+		<LABEL pos='76.00000,110.00000' direction='0' font='3' color='208000' style='2'>SCL</LABEL>
+		<LABEL pos='80.00000,110.00000' direction='0' font='3' color='208000' style='2'>RST</LABEL>
+		<LABEL pos='60.00000,134.00000' direction='1' font='3' color='208000' style='2'>PS0</LABEL>
+		<LABEL pos='64.00000,134.00000' direction='1' font='3' color='208000' style='2'>PS1</LABEL>
+		<LABEL pos='68.00000,134.00000' direction='1' font='3' color='208000' style='2'>INT</LABEL>
+		<LABEL pos='72.00000,134.00000' direction='1' font='3' color='208000' style='2'>ADR</LABEL>
 		<WIRE a='106.00000,22.00000' b='40.00000,22.00000'/>
 		<WIRE a='40.00000,22.00000' b='40.00000,102.00000'/>
-		<WIRE a='40.00000,102.00000' b='64.00000,102.00000'/>
-		<WIRE a='64.00000,102.00000' b='64.00000,110.00000'/>
+		<WIRE a='40.00000,102.00000' b='60.00000,102.00000'/>
+		<WIRE a='60.00000,102.00000' b='60.00000,110.00000'/>
 		<WIRE a='106.00000,22.00000' b='106.00000,40.00000'/>
 		<WIRE a='76.00000,40.00000' b='106.00000,40.00000'/>
 		<WIRE a='104.00000,32.00000' b='104.00000,20.00000'/>
@@ -311,27 +289,27 @@ download the executable.-->
 		<WIRE a='92.00000,36.00000' b='92.00000,102.00000'/>
 		<WIRE a='92.00000,102.00000' b='80.00000,102.00000'/>
 		<WIRE a='80.00000,102.00000' b='80.00000,110.00000'/>
-		<RECTANGLE a='112.00000,118.00000' b='170.00000,142.00000' style='3' fill='0'/>
-		<LABEL pos='116.00000,134.00000' direction='0' font='0' color='208000' style='0'>GND</LABEL>
-		<LABEL pos='120.00000,134.00000' direction='0' font='0' color='208000' style='0'>SCL</LABEL>
-		<LABEL pos='124.00000,134.00000' direction='0' font='0' color='208000' style='0'>SDA</LABEL>
-		<LABEL pos='116.00000,138.00000' direction='0' font='0' color='208000' style='0'>5V</LABEL>
-		<LABEL pos='184.00000,106.00000' direction='2' font='0' color='208000' style='0'>M2-</LABEL>
-		<LABEL pos='184.00000,110.00000' direction='2' font='0' color='208000' style='0'>M2+</LABEL>
-		<LABEL pos='184.00000,114.00000' direction='2' font='0' color='208000' style='0'>5V</LABEL>
-		<LABEL pos='184.00000,118.00000' direction='2' font='0' color='208000' style='0'>GND</LABEL>
-		<LABEL pos='184.00000,122.00000' direction='2' font='0' color='208000' style='0'>HALL3</LABEL>
-		<LABEL pos='184.00000,126.00000' direction='2' font='0' color='208000' style='0'>HALL4</LABEL>
-		<RECTANGLE a='176.00000,102.00000' b='186.00000,128.00000' style='12' fill='0'/>
-		<LABEL pos='184.00000,136.00000' direction='2' font='0' color='208000' style='0'>M1-</LABEL>
-		<LABEL pos='184.00000,140.00000' direction='2' font='0' color='208000' style='0'>M1+</LABEL>
-		<LABEL pos='184.00000,144.00000' direction='2' font='0' color='208000' style='0'>5V</LABEL>
-		<LABEL pos='184.00000,148.00000' direction='2' font='0' color='208000' style='0'>GND</LABEL>
-		<LABEL pos='184.00000,152.00000' direction='2' font='0' color='208000' style='0'>HALL3</LABEL>
-		<LABEL pos='184.00000,156.00000' direction='2' font='0' color='208000' style='0'>HALL4</LABEL>
-		<RECTANGLE a='176.00000,132.00000' b='186.00000,158.00000' style='10' fill='0'/>
-		<RECTANGLE a='164.00000,120.00000' b='168.00000,128.00000' style='10' fill='0'/>
-		<RECTANGLE a='164.00000,132.00000' b='168.00000,140.00000' style='10' fill='0'/>
+		<RECTANGLE a='112.00000,118.00000' b='170.00000,142.00000' style='12' fill='0'/>
+		<LABEL pos='116.00000,134.00000' direction='0' font='3' color='208000' style='0'>GND</LABEL>
+		<LABEL pos='120.00000,134.00000' direction='0' font='3' color='208000' style='0'>SCL</LABEL>
+		<LABEL pos='124.00000,134.00000' direction='0' font='3' color='208000' style='0'>SDA</LABEL>
+		<LABEL pos='116.00000,138.00000' direction='0' font='3' color='208000' style='0'>5V</LABEL>
+		<LABEL pos='184.00000,106.00000' direction='2' font='3' color='208000' style='0'>M2-</LABEL>
+		<LABEL pos='184.00000,110.00000' direction='2' font='3' color='208000' style='0'>M2+</LABEL>
+		<LABEL pos='184.00000,114.00000' direction='2' font='3' color='208000' style='0'>5V</LABEL>
+		<LABEL pos='184.00000,118.00000' direction='2' font='3' color='208000' style='0'>GND</LABEL>
+		<LABEL pos='184.00000,122.00000' direction='2' font='3' color='208000' style='0'>HALL3</LABEL>
+		<LABEL pos='184.00000,126.00000' direction='2' font='3' color='208000' style='0'>HALL4</LABEL>
+		<RECTANGLE a='176.00000,102.00000' b='186.00000,128.00000' style='13' fill='0'/>
+		<LABEL pos='184.00000,136.00000' direction='2' font='3' color='208000' style='0'>M1-</LABEL>
+		<LABEL pos='184.00000,140.00000' direction='2' font='3' color='208000' style='0'>M1+</LABEL>
+		<LABEL pos='184.00000,144.00000' direction='2' font='3' color='208000' style='0'>5V</LABEL>
+		<LABEL pos='184.00000,148.00000' direction='2' font='3' color='208000' style='0'>GND</LABEL>
+		<LABEL pos='184.00000,152.00000' direction='2' font='3' color='208000' style='0'>HALL3</LABEL>
+		<LABEL pos='184.00000,156.00000' direction='2' font='3' color='208000' style='0'>HALL4</LABEL>
+		<RECTANGLE a='176.00000,132.00000' b='186.00000,158.00000' style='13' fill='0'/>
+		<RECTANGLE a='164.00000,120.00000' b='168.00000,128.00000' style='13' fill='0'/>
+		<RECTANGLE a='164.00000,132.00000' b='168.00000,140.00000' style='13' fill='0'/>
 		<WIRE a='168.00000,120.00000' b='174.00000,102.00000'/>
 		<WIRE a='174.00000,102.00000' b='174.00000,128.00000'/>
 		<WIRE a='174.00000,128.00000' b='168.00000,128.00000'/>
@@ -340,22 +318,22 @@ download the executable.-->
 		<WIRE a='174.00000,132.00000' b='174.00000,158.00000'/>
 		<WIRE a='174.00000,158.00000' b='168.00000,140.00000'/>
 		<WIRE a='168.00000,140.00000' b='168.00000,132.00000'/>
-		<TEXT pos='134.00000,130.00000' direction='3' font='0' color='000000'>MAKEBLOCK</TEXT>
-		<TEXT pos='134.00000,134.00000' direction='3' font='0' color='000000'>MOTOR DRIVER</TEXT>
-		<LABEL pos='248.00000,92.00000' direction='0' font='0' color='208000' style='0'>C1</LABEL>
-		<LABEL pos='244.00000,92.00000' direction='0' font='0' color='208000' style='0'>C2</LABEL>
-		<LABEL pos='240.00000,92.00000' direction='0' font='0' color='208000' style='0'>GND</LABEL>
-		<LABEL pos='236.00000,92.00000' direction='0' font='0' color='208000' style='0'>5V</LABEL>
-		<LABEL pos='232.00000,92.00000' direction='0' font='0' color='208000' style='0'>N2</LABEL>
-		<LABEL pos='228.00000,92.00000' direction='0' font='0' color='208000' style='0'>N1</LABEL>
-		<RECTANGLE a='252.00000,84.00000' b='226.00000,94.00000' style='11' fill='0'/>
-		<LABEL pos='280.00000,92.00000' direction='0' font='0' color='208000' style='0'>C1</LABEL>
-		<LABEL pos='276.00000,92.00000' direction='0' font='0' color='208000' style='0'>C2</LABEL>
-		<LABEL pos='272.00000,92.00000' direction='0' font='0' color='208000' style='0'>GND</LABEL>
-		<LABEL pos='268.00000,92.00000' direction='0' font='0' color='208000' style='0'>5V</LABEL>
-		<LABEL pos='264.00000,92.00000' direction='0' font='0' color='208000' style='0'>N2</LABEL>
-		<LABEL pos='260.00000,92.00000' direction='0' font='0' color='208000' style='0'>N1</LABEL>
-		<RECTANGLE a='284.00000,84.00000' b='258.00000,94.00000' style='12' fill='0'/>
+		<TEXT pos='134.00000,130.00000' direction='3' font='3' color='000000'>MAKEBLOCK</TEXT>
+		<TEXT pos='134.00000,134.00000' direction='3' font='3' color='000000'>MOTOR DRIVER</TEXT>
+		<LABEL pos='248.00000,92.00000' direction='0' font='3' color='208000' style='0'>C1</LABEL>
+		<LABEL pos='244.00000,92.00000' direction='0' font='3' color='208000' style='0'>C2</LABEL>
+		<LABEL pos='240.00000,92.00000' direction='0' font='3' color='208000' style='0'>GND</LABEL>
+		<LABEL pos='236.00000,92.00000' direction='0' font='3' color='208000' style='0'>5V</LABEL>
+		<LABEL pos='232.00000,92.00000' direction='0' font='3' color='208000' style='0'>N2</LABEL>
+		<LABEL pos='228.00000,92.00000' direction='0' font='3' color='208000' style='0'>N1</LABEL>
+		<RECTANGLE a='252.00000,84.00000' b='226.00000,94.00000' style='13' fill='0'/>
+		<LABEL pos='280.00000,92.00000' direction='0' font='3' color='208000' style='0'>C1</LABEL>
+		<LABEL pos='276.00000,92.00000' direction='0' font='3' color='208000' style='0'>C2</LABEL>
+		<LABEL pos='272.00000,92.00000' direction='0' font='3' color='208000' style='0'>GND</LABEL>
+		<LABEL pos='268.00000,92.00000' direction='0' font='3' color='208000' style='0'>5V</LABEL>
+		<LABEL pos='264.00000,92.00000' direction='0' font='3' color='208000' style='0'>N2</LABEL>
+		<LABEL pos='260.00000,92.00000' direction='0' font='3' color='208000' style='0'>N1</LABEL>
+		<RECTANGLE a='284.00000,84.00000' b='258.00000,94.00000' style='13' fill='0'/>
 		<WIRE a='184.00000,106.00000' b='228.00000,106.00000'/>
 		<WIRE a='228.00000,106.00000' b='228.00000,92.00000'/>
 		<WIRE a='232.00000,92.00000' b='232.00000,110.00000'/>
@@ -368,8 +346,8 @@ download the executable.-->
 		<WIRE a='244.00000,122.00000' b='184.00000,122.00000'/>
 		<WIRE a='248.00000,92.00000' b='248.00000,126.00000'/>
 		<WIRE a='248.00000,126.00000' b='184.00000,126.00000'/>
-		<TEXT pos='164.00000,130.00000' direction='0' font='0' color='000000'>MOTOR1</TEXT>
-		<TEXT pos='164.00000,142.00000' direction='0' font='0' color='000000'>MOTOR2</TEXT>
+		<TEXT pos='164.00000,130.00000' direction='0' font='3' color='000000'>MOTOR1</TEXT>
+		<TEXT pos='164.00000,142.00000' direction='0' font='3' color='000000'>MOTOR2</TEXT>
 		<JUNCTION pos='104.00000,32.00000'/>
 		<JUNCTION pos='106.00000,40.00000'/>
 		<WIRE a='184.00000,136.00000' b='260.00000,136.00000'/>
@@ -384,10 +362,10 @@ download the executable.-->
 		<WIRE a='276.00000,152.00000' b='184.00000,152.00000'/>
 		<WIRE a='280.00000,92.00000' b='280.00000,156.00000'/>
 		<WIRE a='280.00000,156.00000' b='184.00000,156.00000'/>
-		<ELLIPSE a='226.00000,60.00000' b='252.00000,84.00000' style='15' fill='0'/>
-		<ELLIPSE a='258.00000,60.00000' b='284.00000,84.00000' style='15' fill='0'/>
-		<TEXT pos='234.00000,72.00000' direction='3' font='0' color='000000'>MOTOR1</TEXT>
-		<TEXT pos='266.00000,72.00000' direction='3' font='0' color='000000'>MOTOR2</TEXT>
+		<ELLIPSE a='226.00000,60.00000' b='252.00000,84.00000' style='12' fill='0'/>
+		<ELLIPSE a='258.00000,60.00000' b='284.00000,84.00000' style='12' fill='0'/>
+		<TEXT pos='234.00000,72.00000' direction='3' font='3' color='000000'>MOTOR1</TEXT>
+		<TEXT pos='266.00000,72.00000' direction='3' font='3' color='000000'>MOTOR2</TEXT>
 		<JUNCTION pos='110.00000,32.00000'/>
 		<WIRE a='110.00000,32.00000' b='110.00000,114.00000'/>
 		<WIRE a='104.00000,32.00000' b='110.00000,32.00000'/>
@@ -403,17 +381,35 @@ download the executable.-->
 		<JUNCTION pos='40.00000,102.00000'/>
 		<WIRE a='40.00000,102.00000' b='40.00000,138.00000'/>
 		<WIRE a='40.00000,138.00000' b='116.00000,138.00000'/>
-		<JUNCTION pos='148.00000,40.00000'/>
-		<JUNCTION pos='148.00000,38.00000'/>
-		<JUNCTION pos='148.00000,48.00000'/>
-		<JUNCTION pos='148.00000,58.00000'/>
-		<JUNCTION pos='190.00000,22.00000'/>
-		<JUNCTION pos='190.00000,28.00000'/>
-		<JUNCTION pos='190.00000,38.00000'/>
-		<JUNCTION pos='190.00000,48.00000'/>
-		<JUNCTION pos='190.00000,58.00000'/>
 		<JUNCTION pos='102.00000,56.00000'/>
 		<WIRE a='102.00000,56.00000' b='124.00000,56.00000'/>
 		<WIRE a='124.00000,56.00000' b='124.00000,134.00000'/>
+		<WIRE a='174.00000,24.00000' b='174.00000,20.00000'/>
+		<WIRE a='168.00000,24.00000' b='174.00000,24.00000'/>
+		<WIRE a='174.00000,20.00000' b='202.00000,20.00000'/>
+		<WIRE a='174.00000,36.00000' b='174.00000,30.00000'/>
+		<WIRE a='168.00000,36.00000' b='174.00000,36.00000'/>
+		<WIRE a='174.00000,30.00000' b='206.00000,30.00000'/>
+		<WIRE a='206.00000,30.00000' b='206.00000,90.00000'/>
+		<WIRE a='174.00000,46.00000' b='174.00000,42.00000'/>
+		<WIRE a='168.00000,46.00000' b='174.00000,46.00000'/>
+		<WIRE a='174.00000,42.00000' b='210.00000,42.00000'/>
+		<WIRE a='210.00000,92.00000' b='210.00000,42.00000'/>
+		<WIRE a='174.00000,56.00000' b='174.00000,52.00000'/>
+		<WIRE a='168.00000,56.00000' b='174.00000,56.00000'/>
+		<WIRE a='174.00000,52.00000' b='214.00000,52.00000'/>
+		<WIRE a='214.00000,52.00000' b='214.00000,94.00000'/>
+		<JUNCTION pos='148.00000,36.00000'/>
+		<JUNCTION pos='148.00000,46.00000'/>
+		<JUNCTION pos='148.00000,56.00000'/>
+		<JUNCTION pos='174.00000,24.00000'/>
+		<JUNCTION pos='174.00000,36.00000'/>
+		<JUNCTION pos='174.00000,46.00000'/>
+		<JUNCTION pos='174.00000,56.00000'/>
+		<JUNCTION pos='190.00000,16.00000'/>
+		<JUNCTION pos='190.00000,24.00000'/>
+		<JUNCTION pos='190.00000,36.00000'/>
+		<JUNCTION pos='190.00000,46.00000'/>
+		<JUNCTION pos='148.00000,40.00000'/>
 	</TinyCAD>
 </TinyCADSheets>
